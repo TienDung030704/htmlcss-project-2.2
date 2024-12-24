@@ -12,18 +12,23 @@ body {
   --font-poppins: Poppins, sans-serif;
 }
 .main-content {
-  width: 1440px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
 }
 a {
   text-decoration: none;
 }
 .header-top {
   background: #ffffff;
+  display: flex;
+  padding: 64px 0px;
 }
 .header-top .body {
   display: flex;
   align-items: center;
-  padding: 64px 0;
+  justify-content: space-between;
 }
 .nav ul {
   display: flex;
@@ -31,16 +36,18 @@ a {
 .nav {
   margin-left: auto;
 }
-.body {
-}
 .header-top .nav a {
   color: #2f3a3b;
   font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  margin-left: 39px;
+  padding-left: 39px;
   display: inline-block;
+}
+.nav a:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #2f3a3b;
 }
 .btn {
   width: 186px;
@@ -48,7 +55,17 @@ a {
   border-radius: 14px;
   background: #1ebfc1;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
-  padding: 8px 16px;
+  padding: 12px 16px;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.btn:hover {
+  color: orange;
+  background: #1ebfc1;
 }
 .header-top .btn-1 {
   color: #494949;
@@ -72,7 +89,149 @@ a {
   font-weight: 600;
   line-height: normal;
   margin-left: 24px;
+  display: inline-block;
 }
 .header-top .action {
-  margin-left: 178px;
+  margin-left: 177px;
+}
+/* =================Hero=============== */
+.hero {
+  background: #ffffff;
+}
+.hero .body {
+  display: flex;
+}
+.hero .thumb {
+  width: 576px;
+  height: 631px;
+}
+.hero .content {
+  width: 49%;
+}
+.hero .info {
+  width: 51%;
+}
+.hero .info {
+  padding: 93px 0px;
+}
+.hero .desc {
+  color: #767e7e;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero .heading {
+  color: #0d1111;
+  font-family: var(--font-poppins);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 72px; /* 116.129% */
+  margin-top: 18px;
+}
+.hero .desc-2 {
+  color: #9da6a5;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  width: 374px;
+  margin-top: 46px;
+  margin-bottom: 52px;
+}
+.hero .btn-3 {
+  margin-top: 52px;
+}
+.action .play {
+  margin-left: 50px;
+  border: none;
+  background: #fff;
+}
+.action .plays {
+  border: none;
+}
+.content .thumb {
+  position: relative;
+}
+.card {
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+}
+.card .card-2 {
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+  object-fit: cover;
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+}
+/* ======================featured ==================== */
+.featured {
+  margin-top: 51px;
+}
+.featured .heading {
+  color: #0d1111;
+  font-family: var(--font-poppins);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px; /* 133.333% */
+  width: 577px;
+  margin-top: 18px;
+}
+.featured .desc-3 {
+  color: #767e7e;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 18px;
+  width: 590px;
+}
+.featured .desc-4 {
+  color: #767e7e;
+  font-family: var(--font-poppins);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+/* Featured List */
+.featured-list {
+  margin-top: 80px;
+  justify-content: center;
+}
+.featured-list .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-list .heading-1 {
+  color: #0d1111;
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 26px;
+}
+.featured-list .desc {
+  color: #9da6a5;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  width: 168px;
+  margin-top: 16px;
+}
+.featured-list .desc-5 {
+  width: 223px;
+  color: #9da6a5;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  margin-top: 16px;
 }
