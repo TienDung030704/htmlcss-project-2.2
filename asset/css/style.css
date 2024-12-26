@@ -498,10 +498,10 @@ a {
   display: inline-block;
 }
 .footer .row .column:first-child {
-  width: 7%;
+  width: 50%;
 }
 .footer .row .column {
-  width: 93%;
+  width: 50%;
 }
 .footer .copyright {
   color: #b0b5b4;
